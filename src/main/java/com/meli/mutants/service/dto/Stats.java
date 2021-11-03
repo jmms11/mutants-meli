@@ -1,5 +1,9 @@
 package com.meli.mutants.service.dto;
 
+/**
+ * @author JhonMauricio
+ *
+ */
 public class Stats {
 	
 	private Integer count_mutant_dna;

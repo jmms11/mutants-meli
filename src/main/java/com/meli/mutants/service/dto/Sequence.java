@@ -2,6 +2,10 @@ package com.meli.mutants.service.dto;
 
 import java.util.List;
 
+/**
+ * @author JhonMauricio
+ *
+ */
 public class Sequence {
 	
 	private List<String> dna;
