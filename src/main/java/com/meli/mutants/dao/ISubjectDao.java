@@ -11,8 +11,8 @@ import com.meli.mutants.service.dto.Subject;
 public interface ISubjectDao extends JpaRepository<Subject, Integer> {
 	
     /**
-     * @param type
-     * @return
+     * @param type subject
+     * @return long type subject
      */
     long countByType(String type);
 

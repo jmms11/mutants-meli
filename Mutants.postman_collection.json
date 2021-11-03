@@ -11,12 +11,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/stats",
-					"protocol": "http",
+					"raw": "https://mutants-meli-329606.uc.r.appspot.com/stats",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"mutants-meli-329606",
+						"uc",
+						"r",
+						"appspot",
+						"com"
 					],
-					"port": "8080",
 					"path": [
 						"stats"
 					]
@@ -29,13 +32,25 @@
 			"request": {
 				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dna\":[\"TTGCTA\",\"CCGTGC\",\"TGTTGT\",\"AAAAGG\",\"ACTCAC\",\"TCAGTC\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://localhost:8080/mutant",
-					"protocol": "http",
+					"raw": "https://mutants-meli-329606.uc.r.appspot.com/mutant",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"mutants-meli-329606",
+						"uc",
+						"r",
+						"appspot",
+						"com"
 					],
-					"port": "8080",
 					"path": [
 						"mutant"
 					]

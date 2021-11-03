@@ -2,10 +2,13 @@ package com.meli.mutants.utils;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 /**
  * @author JhonMauricio
  *
  */
+@Service
 public class MatrixUtils {
 	
 	
@@ -29,14 +32,13 @@ public class MatrixUtils {
 	
 	
 	/**
-	 * 
+	 * Valida de forma horizontal coincidencias en la secuencia
 	 * 
 	 * @param dna
 	 * @param sequenceSize
 	 * @return
 	 */
 	public boolean validateHorizontalSequence(char[][] dna, int sequenceSize){
-        //Validar secuencia horizontal
 		int counter = 1;
         for(int i = 0; i < dna.length; i++){
             for(int j = 0; j < dna.length; j++){
@@ -54,7 +56,7 @@ public class MatrixUtils {
 	}
 	
 	/**
-	 * 
+	 * Valida de forma vertical coincidencias en la secuencia
 	 * 
 	 * @param dna
 	 * @param sequenceSize
@@ -79,7 +81,7 @@ public class MatrixUtils {
 	}
 	
 	/**
-	 * 
+	 * Valida de forma diagonal de izquerda a derecha coincidencias en la secuencia
 	 * 
 	 * @param dna
 	 * @param sequenceSize
@@ -112,7 +114,8 @@ public class MatrixUtils {
 	
     
 	/**
-	 * 
+	 * Valida de forma diagonal de derecha a izquerda coincidencias 
+	 * en la secuencia invirtiendo la matriz base
 	 * 
 	 * @param dna
 	 * @param sequenceSize
